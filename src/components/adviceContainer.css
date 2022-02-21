@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+
+.container {
+  width: 33rem;
+  min-height: 20rem;
+  height: fit-content;
+
+  border-radius: 1rem;
+
+  padding: 3rem;
+
+  /* background-color: hsl(217, 19%, 38%); */
+  background-color: hsl(217, 19%, 24%);
+
+  font-family: "Manrope", sans-serif;
+
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 2rem;
+
+  position: relative;
+}
+
+h3 {
+  color: hsl(150, 100%, 66%);
+
+  font-size: 12px;
+
+  /* margin-bottom: 1rem; */
+
+  letter-spacing: 5px;
+}
+p {
+  color: hsl(193, 38%, 86%);
+
+  font-size: 28px;
+}
+.dividerIcon {
+  margin-bottom: 1rem;
+  width: 100%;
+  /* height: 16px; */
+}
+
+.diceContainer {
+  position: absolute;
+
+  bottom: -2rem;
+
+  background-color: hsl(150, 100%, 66%);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 1.2rem;
+
+  border-radius: 50%;
+
+  cursor: pointer;
+}
+
+.diceContainer:hover {
+  box-shadow: 0rem 0 2.5rem hsl(150, 100%, 66%);
+}
+.diceContainer,
+.diceIcon,
+.dividerIcon {
+  -webkit-user-select: none; /* Chrome all / Safari all */
+  -moz-user-select: none; /* Firefox all */
+  -ms-user-select: none; /* IE 10+ */
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.mobile {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: 100%;
+
+    padding: 2rem 1.5rem;
+  }
+
+  .mobile {
+    display: block;
+  }
+  .desktop {
+    display: none;
+  }
+}
